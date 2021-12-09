@@ -29,7 +29,7 @@ console.log( food );
 let pets = 2;
 console.log( pets );
 // 10 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 1
+let friendsPets = 7
 console.log( friendsPets );
 // 11 - Add two pets to your `pets` variable
 pets+= 2
@@ -49,8 +49,7 @@ else{
 // console log "Roll the dice!"
 if( luckyNumber == 2 && adventurous){
   console.log( 'Roll the dice!' );
-}
-else{
+} else{
   console.log( "Don't roll the dice!" );
 }
 
@@ -76,23 +75,30 @@ if ( pets > allowedPets){
 // be sure to think through all the scenarios.
 // console.log `mostPets` after the conditional has run.
 let mostPets;
+
 if( pets > friendsPets){
   mostPets = pets
-}
-else{
+} else{
   mostPets = friendsPets
 };
 console.log( mostPets );
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
+
+mostPets = null;
+
 switch(pets > friendsPets){
-  case 0:
+  case true:
   mostPets = pets;
   break;
-  case 1:
+  case false:
   mostPets = friendsPets;
+  break;
 }
+
 console.log( mostPets );
 // 18 -- Rewrite question 13 with a `ternary` operator. You'll need to do research!
+
+mostPets = null;
 
 mostPets = (pets > friendsPets) ? pets:friendsPets;
 console.log( mostPets );
