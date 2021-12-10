@@ -40,14 +40,13 @@ const allowedPets = 3
 // if it's not true, console log "How about we stay home?"
 if( adventurous ){
   console.log( 'Adventures are great!' );
-}
-else{
+} else{
   console.log( 'How about we stay home?');
 }
 
 // 14 - Create a compound conditional: if luckyNumber is 2 and adventurous is true,
 // console log "Roll the dice!"
-if( luckyNumber == 2 && adventurous){
+if( luckyNumber === 2 && adventurous){
   console.log( 'Roll the dice!' );
 } else{
   console.log( "Don't roll the dice!" );
@@ -60,11 +59,9 @@ if( luckyNumber == 2 && adventurous){
 // if the value of `pets` is greater than the value of `allowedPets`.
 if ( pets < allowedPets ){
   console.log( 'I can have more pets');
-}
-else if ( pets == allowedPets) {
+} else if ( pets == allowedPets) {
   console.log( 'I have enough pets');
-}
-if ( pets > allowedPets){
+} if ( pets > allowedPets){
   console.log( 'Oh no, I have too many pets!');
 }
 // STRETCH GOALS:
@@ -80,13 +77,13 @@ if( pets > friendsPets){
   mostPets = pets
 } else{
   mostPets = friendsPets
-};
+}
 console.log( mostPets );
 // 17 - Rewrite question 16 with a `switch` statement. You'll need to do research!
 
 mostPets = null;
 
-switch(pets > friendsPets){
+switch( pets > friendsPets ){
   case true:
   mostPets = pets;
   break;
